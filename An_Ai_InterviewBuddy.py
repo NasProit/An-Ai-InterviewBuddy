@@ -80,11 +80,19 @@ st.markdown("<div class='subtitle'>Enter a topic, and the AI will explain it fro
 user_input = st.text_input("Enter a topic:")
 
 # Generate response
+import re
+
+# Generate response
 if st.button("📖 Explain"):
     if user_input:
         response = chain.invoke({"input": user_input})
         explanation = response.content if hasattr(response, "content") else response
+        
+        # Remove unwanted thoughts (if they appear)
+        explanation = re.sub(r"<think>.*?</think>", "", explanation, flags=re.DOTALL).strip()
+
         st.subheader("📌 Explanation:")
         st.write(explanation)
     else:
         st.warning("⚠️ Please enter a topic to explain.")
+
