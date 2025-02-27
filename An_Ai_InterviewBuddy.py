@@ -9,7 +9,7 @@ load_dotenv()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 # Initialize the model
-model = ChatGroq(model="Gemma2-9b-It")
+model = ChatGroq(model="deepseek-r1-distill-llama-70b")
 
 # Define prompt template
 prompt = ChatPromptTemplate.from_messages([
