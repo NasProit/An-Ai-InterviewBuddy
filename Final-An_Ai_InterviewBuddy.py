@@ -56,7 +56,7 @@ def get_prompt(prompt_type):
        You are an expert coding interviewer conducting a high-stakes technical interview. Your task is to generate the most commonly asked and important coding interview questions related to the given topic.
 
         Instructions for Output:
-        Generate a list of coding questions that are commonly asked in technical interviews.
+        Generate a list of atleast 10 coding questions that are commonly asked in technical interviews.
 
         Include basic, intermediate, and advanced coding problems.
         Cover different aspects such as data structures, algorithms, system design, and optimization techniques.
