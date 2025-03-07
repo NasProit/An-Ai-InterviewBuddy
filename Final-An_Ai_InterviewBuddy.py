@@ -111,7 +111,7 @@ def create_text_file(content):
 
 # Streamlit UI
 st.set_page_config(page_title="AI Interview Buddy", page_icon="🧠", layout="centered")
-st.markdown("<h1 style='text-align: center; color: #2596be;'>🤖 AI Interview Buddy by ProitBridge</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2596be;'>🤖 An  AI Interview Buddy by ProitBridge</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; color: #2596be;'>Enter a topic and select the type of response 🚀</h3>", unsafe_allow_html=True)
 
 # User input
