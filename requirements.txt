@@ -2,3 +2,4 @@ python-dotenv
 langchain_groq
 docx
 langchain
+langchain-community
