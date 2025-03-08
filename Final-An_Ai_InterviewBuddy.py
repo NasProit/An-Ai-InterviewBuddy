@@ -411,7 +411,7 @@ def show_auth_ui():
             if verify_user(login_username, login_password):
                 st.session_state["authenticated"] = True
                 st.session_state["username"] = login_username
-                st.experimental_rerun()
+                
             else:
                 st.error("Invalid username or password")
     
