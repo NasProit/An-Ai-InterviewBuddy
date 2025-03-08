@@ -3,3 +3,4 @@ langchain_groq
 docx
 langchain
 langchain-community
+streamlit langchain
